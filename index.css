@@ -1,0 +1,64 @@
+* {
+    padding: 1px
+  }
+  
+  h1 {
+    font-weight:10px;
+    color:red;
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    
+    mnargin: 0;
+    padding: 0;
+    background-color: lightgreen;
+    border: 2px solid orange;
+    list-style: none;
+  }
+  
+  .nav-list li {
+    flex-grow: 0;
+  /*   flex-shrink:1; */
+    border: 2px solid gray;
+  }
+  
+  /* header */
+  header {
+    -border-width: 5px;
+  }
+  
+  /* Cards */
+  .card {
+    background-color: lightblue;
+    padding: 10px
+  }
+  
+  .columns {
+    display: flex;
+    flex-direction: column;
+    justfify-content: center;
+    align-items: center;
+    gap: 1 rem;
+    border: 10px solid firebrick;
+    width: 800px;
+  }
+  
+  @media (min-width: 750px) {
+    .columns {
+      flex-direction: row;
+    }
+  }
+  
+  .columns > * {
+  /*   flex-shrink: 0; */
+    width: 100%;
+  }
+  
+  .card:nth-child(2) {
+    background : lightpink;
+    align-self: flex-end;
+  /*   justify-self only exist in grid but not in flex */
+  }
